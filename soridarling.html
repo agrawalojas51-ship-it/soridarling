@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>I'm Sorry</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #333;
+    }
+
+    .card {
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      max-width: 600px;
+      text-align: center;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 2.5rem;
+      color: #444;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .heart {
+      font-size: 40px;
+      margin: 15px 0;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 10px;
+      background: #667eea;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>I'm Sorry</h1>
+    <div class="heart">💙</div>
+    <p>
+      Sorryyyyyyyyyyyyyyyyyyyyy naaaaaaaaaaaaaaaaaaaaaaaaaaa 😔
+    </p>
+
+    <p>
+      I was kidding, i dont hate you, i love listening to you, mai randomly boldiya bhai that was me being a bitch i agree sorryyyyyyyyyyyyy.
+    </p>
+
+    <button onclick="showMessage()">Click if you read this</button>
+
+    <p id="message" style="display:none; margin-top:15px;">
+      Sori Darling Sori darling.
+    </p>
+    <audio id="apologyAudio">
+      <source src="audio.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById('message').style.display = 'block';
+      document.getElementById('apologyAudio').play();
+    }
+  </script>
+</body>
+</html>
